@@ -24,12 +24,22 @@ closeButton.addEventListener("click", () => {
 });
 
 
-function Book(title, identifier, author, numpages, read) {
-    this.title = title;
-    this.identifier = identifier
-    this.author = author;
-    this.numpages = numpages;
-    this.read = read;
+// function Book(title, identifier, author, numpages, read) {
+//     this.title = title;
+//     this.identifier = identifier
+//     this.author = author;
+//     this.numpages = numpages;
+//     this.read = read;
+// }
+
+class Book {
+    constructor(title, identifier, author, numpages, read) {
+        this.title = title;
+        this.identifier = identifier
+        this.author = author;
+        this.numpages = numpages;
+        this.read = read;
+    }
 }
 
 function clearInputs() {
